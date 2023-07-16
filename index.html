@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Password Generator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+  </head>
+
+  <body> 
+    <script src="script.js"></script>
+
+        <h1 class="title"> Welcome to ✨ random ✨ password generator! </h1>
+        <h2 class="instructions"> How it works: </h2>
+        <ul class="instruction-breakdown">
+            <h3> ‣ We ask you a small series of prompts </h3>
+            <h3> ‣ You let us know what you are looking for in your password </h3>
+            <h3> ‣  We give you a password that meets that complexity! </h3>
+        </ul>
+
+
+        <div class="pw-length">
+            <label for = "characters"> How many characters would you like in your password? (8 - 128) </label>
+            <input type = "number" id="characters" 
+                    min = "8" max = "128">
+        </div>
+
+
+        <div class="checkboxes">
+            <p id="complexity"> I want the following in my password: (ex. "I want special charactrers, so I will select the special character box") </p> <br>
+        <form action>
+
+            <input class="box-size" type="checkbox" id="lc" value="lowercase">
+            <label for="lc"> Lowercase </label> <br>
+
+            <input class="box-size" type="checkbox" id="uc" value="uppercase">
+            <label for="uc"> Uppercase </label> <br>
+
+            <input class="box-size" type="checkbox" id="num" value="numeric">
+            <label for="num"> Numeric </label> <br>
+
+            <input class="box-size" type="checkbox" id="sc" value="special characters">
+            <label for="sc"> Special Characters </label> <br>
+           <input id="submit-button" type="Submit" value="Submit">
+
+        </form>
+        </div>
+  </body>
